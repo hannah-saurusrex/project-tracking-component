@@ -27,3 +27,85 @@ body {
 
 .attribution a {
   color: #3e52a3; }
+
+@media only screen and (min-width: 300px) and (max-width: 667px) {
+  /* mobile nav styles */
+  .label-style {
+    width: 46px;
+    height: 46px;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.4s ease; }
+  .burger-box {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 21px;
+    padding-left: 3px; }
+  #burger-check {
+    display: none; }
+  /* nav bar lines */
+  .bar {
+    width: 40px;
+    height: 4px;
+    border-radius: 20%;
+    background: var(--darkBlue);
+    position: relative; }
+  .bar:before, .bar:after {
+    content: '';
+    top: -12px;
+    width: 40px;
+    height: 4px;
+    border-radius: 20%;
+    background: inherit;
+    position: absolute;
+    transition: all 0.4s ease; }
+  .bar:after {
+    top: 12px; }
+  /* turn bar into cross */
+  input:checked ~ .label-style > .burger-box > .bar:before,
+  input:checked ~ .label-style > .burger-box > .bar:after {
+    top: 0;
+    transform: rotate(90deg); }
+  /* spin the cross */
+  input:checked ~ .label-style > .burger-box {
+    transform: rotate(225deg); }
+  /* drop down menu */
+  .nav-menu {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    transform: translate(0, -120%);
+    transition: transform 0.4s ease; }
+  input:checked ~ .nav-menu {
+    transform: translate(0, 0);
+    animation: fadein;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+  input:not(checked) ~ .nav-menu {
+    animation: fadeout;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; }
+  li {
+    list-style: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    color: var(--darkBlue); }
+  a {
+    letter-spacing: 2px; }
+  /* menu fade */
+  @keyframes fadein {
+    from {
+      background: rgba(168, 20, 52, 0); }
+    to {
+      background: #a81434; } }
+  @keyframes fadeout {
+    from {
+      background: #a81434; }
+    to {
+      background: rgba(168, 20, 52, 0); } } }
