@@ -20,8 +20,23 @@ body {
 *:after {
   box-sizing: border-box; }
 
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "pitch-intro pitch-visual" "footer footer"; }
+
+.header {
+  grid-area: header; }
+
+.pitch {
+  grid-area: pitch-intro; }
+
+.pitch-image {
+  grid-area: pitch-visual; }
+
 /* footer styles */
 .attribution {
+  grid-area: footer;
   font-size: 11px;
   text-align: center; }
 

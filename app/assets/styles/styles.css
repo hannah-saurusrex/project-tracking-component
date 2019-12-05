@@ -21,10 +21,31 @@ body {
   box-sizing: border-box;
 }
 
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "pitch-intro pitch-visual"
+    "footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.pitch {
+    grid-area: pitch-intro;
+}
+
+.pitch-image {
+    grid-area: pitch-visual;
+}
 
 
 /* footer styles */
 .attribution { 
+    grid-area: footer;
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
@@ -32,6 +53,7 @@ body {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 667px) {
+    
     /* mobile nav styles */
     .label-style {
         width: 46px;
