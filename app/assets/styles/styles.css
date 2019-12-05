@@ -1,3 +1,32 @@
+:root {
+    --red: hsl(0, 100%, 68%);
+    --darkBlue: hsl(230, 29%, 20%);
+    --darkGrayishBlue: hsl(230, 11%, 40%);
+    --grayishBlue: hsl(231, 7%, 65%);
+    --lightGrayishBlue: hsl(207, 33%, 95%);
+}
+
 body {
     margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 18px;
+    max-width: 1440px;
+    font-family: 'Barlow', sans-serif; /* body text font */
+    font-family: 'Barlow Condensed', sans-serif; /* for headings, CTAs and nav */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+/* footer styles */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
