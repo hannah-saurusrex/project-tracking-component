@@ -69,6 +69,11 @@ body {
     opacity: 0.6;
     font-size: 1.75rem;
     vertical-align: text-bottom;
+    cursor: initial;
+}
+
+.nav-menu ul li.spacer:hover {
+    text-decoration: none;
 }
 
 #burger-check {
