@@ -21,22 +21,107 @@ body {
   box-sizing: border-box; }
 
 .main {
+  margin-left: 10.31rem;
+  margin-right: 0;
   display: grid;
+  grid-gap: 50px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "header header" "pitch-intro pitch-visual" "footer footer"; }
 
 .header {
-  grid-area: header; }
+  grid-area: header;
+  margin-top: 50px; }
+
+.nav-menu {
+  float: right;
+  margin-top: -40px; }
+
+.nav-menu li {
+  list-style: none;
+  display: inline;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  color: var(--darkBlue);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 35px;
+  letter-spacing: 1px;
+  cursor: pointer; }
+
+.nav-menu li:hover {
+  text-decoration: underline; }
+
+.nav-menu span li {
+  color: var(--grayishBlue); }
+
+#burger-check {
+  display: none;
+  visibility: hidden; }
+
+.label-style {
+  display: none;
+  visibility: hidden; }
 
 .pitch {
   grid-area: pitch-intro; }
+
+h3, h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 16px;
+  color: var(--grayishBlue); }
+
+h3 span {
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 3px 10px 5px 10px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  margin-right: 6px; }
+
+h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+  color: var(--darkBlue);
+  letter-spacing: 1px;
+  line-height: 3.75rem;
+  margin-top: 1.35rem; }
+
+p {
+  color: var(--darkGrayishBlue);
+  font-family: 'Barlow', sans-serif;
+  max-width: 55%; }
+
+h2 {
+  display: inline-block;
+  letter-spacing: 4.5px; }
+
+.demo {
+  margin-top: 50px; }
+
+button {
+  background-color: var(--red);
+  color: var(--lightGrayishBlue);
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  border: 2px solid var(--lightGrayishBlue);
+  padding: 12px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer; }
+
+button:hover {
+  background-color: #ff9494; }
 
 .pitch-image {
   grid-area: pitch-visual; }
 
 /* footer styles */
 .attribution {
-  grid-area: footer;
   font-size: 11px;
   text-align: center; }
 
