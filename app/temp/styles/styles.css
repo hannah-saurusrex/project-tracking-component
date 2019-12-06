@@ -54,6 +54,12 @@ body {
 .nav-menu span li {
   color: var(--grayishBlue); }
 
+.nav-menu ul li.spacer {
+  color: var(--grayishBlue);
+  opacity: 0.6;
+  font-size: 1.75rem;
+  vertical-align: text-bottom; }
+
 #burger-check {
   display: none;
   visibility: hidden; }
@@ -120,8 +126,24 @@ button:hover {
 .pitch-image {
   grid-area: pitch-visual; }
 
+.image-bg {
+  width: 100%;
+  height: 65%;
+  background-color: var(--lightGrayishBlue);
+  grid-column-start: 2;
+  grid-row: header-start / pitch-visual-end;
+  border-bottom-left-radius: 85px;
+  z-index: -100; }
+
 /* footer styles */
+footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-items: center;
+  align-content: center; }
+
 .attribution {
+  width: 100%;
   font-size: 11px;
   text-align: center; }
 
@@ -198,6 +220,9 @@ button:hover {
     color: var(--darkBlue); }
   a {
     letter-spacing: 2px; }
+  .nav-menu ul li.spacer {
+    display: none;
+    visibility: hidden; }
   /* menu fade */
   @keyframes fadein {
     from {
