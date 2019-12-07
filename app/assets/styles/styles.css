@@ -201,7 +201,28 @@ footer {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 667px) {
-    
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0;
+        grid-template-areas: 
+        "logo header"
+        "pitch-visual pitch-visual"
+        "pitch-intro pitch-intro"
+        "footer footer";
+    }
+
+    .logo {
+        display: grid;
+        grid-area: logo;
+        margin: 10px auto;
+        align-content: flex-start;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
     .nav-menu {
         display: none;
         visibility: hidden;
@@ -305,6 +326,21 @@ footer {
     .nav-menu ul li.spacer {
         display: none;
         visibility: hidden;
+    }
+
+    .pitch-image {
+        grid-area: pitch-visual;
+        margin-top: 35px;
+    }
+
+    .pitch {
+        grid-area: pitch-intro;
+        margin: 0 25px 25px 25px;
+    }
+
+    .pitch h1 {
+        font-size: 36px;
+        line-height: 2rem;
     }
 
     /* menu fade */
