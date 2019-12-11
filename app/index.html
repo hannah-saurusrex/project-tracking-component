@@ -16,20 +16,24 @@
         <a href="#"><img src="assets/images/logo.svg" alt="company logo" /></a> 
     </div> 
     <div class="header">
-      <div class="mobile-nav">
-        <input type="checkbox" id="burger-check" aria-label="mobile navigation">
-          <ul>
-            <li href="#">Product</li>
-            <li href="#">Features</li>
-            <li href="#">Pricing</li>
-            <span><li href="#">Login</li></span>
-          </ul>
-        <label for="burger-check" class="label-style">
-          <div class="burger-box">
-            <div class="bar"></div>
+      <!--begin mobile nav-->
+      <div class="burger-menu">
+        <input id="burger-menu" aria-label="mobile navigation" type="checkbox">
+        <nav class="burger-menu-active">
+          <a href="#" class="button">Products</a>
+          <a href="#" class="button">Features</a>
+          <a href="#" class="button">Pricing</a>
+          <a href="#" class="button">Login</a>  
+        </nav>
+        <label for="burger-menu">
+          <div class="burger-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </label>
       </div>
+      <!-- Mobile Nav End -->
     
         <div class="nav-menu">
           <ul>
