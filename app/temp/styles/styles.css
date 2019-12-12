@@ -37,6 +37,10 @@ body {
   justify-items: center;
   align-content: center; }
 
+.burger-menu {
+  display: none;
+  visibility: hidden; }
+
 .mobile-nav {
   display: none;
   visibility: hidden; }
@@ -181,13 +185,16 @@ footer {
     grid-area: header; }
   .header ul {
     display: none; }
+  .burger-menu {
+    display: block;
+    visibility: visible; }
   .header .burger-menu {
     display: block;
     position: absolute;
     right: 3em;
     width: 2em;
     z-index: 1;
-    margin-top: 2.4em; }
+    margin-top: 2.2em; }
   .header .burger-menu input {
     width: 50px;
     height: 50px;
@@ -202,9 +209,9 @@ footer {
   .header .burger-menu label .burger-menu-icon span {
     display: block;
     width: 100%;
-    height: .18rem;
+    height: .19rem;
     margin-bottom: .4rem;
-    background: black;
+    background: var(--darkBlue);
     transition: .3s ease; }
   .header .burger-menu .burger-menu-active {
     position: absolute;
@@ -235,45 +242,13 @@ footer {
     text-decoration: none;
     margin: 25px 0;
     text-transform: uppercase;
-    font-size: .9em; }
+    font-size: 1em;
+    letter-spacing: 1px; }
   /* login grey styles */
   .header .burger-menu input:checked + .burger-menu-active a:last-of-type {
     color: var(--grayishBlue);
     border-top: 1px solid var(--grayishBlue);
-    padding-top: 15px; }
-  /* turn bar into cross */
-  input:checked ~ .label-style > .burger-menu-icon > .bar:before,
-  input:checked ~ .label-style > .burger-menu-icon > .bar:after {
-    top: 0;
-    transform: rotate(90deg); }
-  /* spin the cross */
-  input:checked ~ .label-style > .burger-menu-icon {
-    transform: rotate(225deg); }
-  /* drop down menu */
-  .burger-menu {
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    transform: translate(0, -120%);
-    transition: transform 0.4s ease; }
-  input:checked ~ .burger-menu {
-    transform: translate(0, 0);
-    animation: fadein;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; }
-  input:not(checked) ~ .burger-menu {
-    animation: fadeout;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; }
-  li {
-    list-style: none;
-    padding: 20px 35px;
-    text-transform: uppercase;
-    color: var(--darkBlue); }
-  a {
-    letter-spacing: 2px; }
+    padding-top: 20px; }
   .nav-menu ul li.spacer {
     display: none;
     visibility: hidden; }
