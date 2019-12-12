@@ -200,8 +200,8 @@ footer {
     height: 50px;
     position: absolute;
     z-index: 10000;
-    top: -10px;
-    left: -10px;
+    top: -20px;
+    left: -8px;
     opacity: 0; }
   .header .burger-menu label {
     display: block;
@@ -226,6 +226,14 @@ footer {
     transition: all 0.4s ease; }
   .header .burger-menu label .burger-menu-icon span:before {
     top: 12px; }
+  /* turn bars into a cross */
+  input:checked ~ .burger-menu > .burger-menu-icon > span:before,
+  input:checked ~ .burger-menu > .burger-menu-icon > span:after {
+    top: 0;
+    transform: rotate(90deg); }
+  /* spin the cross */
+  input:checked ~ .burger-menu > .burger-menu-icon {
+    transform: rotate(225deg); }
   .header .burger-menu .burger-menu-active {
     position: absolute;
     height: 0;
