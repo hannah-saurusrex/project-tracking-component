@@ -227,12 +227,11 @@ footer {
   .header .burger-menu label .burger-menu-icon span:before {
     top: 12px; }
   /* turn bars into a cross */
-  input:checked ~ .burger-menu > .burger-menu-icon > span:before,
-  input:checked ~ .burger-menu > .burger-menu-icon > span:after {
+  .burger-menu input:checked + .burger-menu-active + label .burger-menu-icon span:before,
+  .burger-menu input:checked + .burger-menu-active + label .burger-menu-icon span:after {
     top: 0;
     transform: rotate(90deg); }
-  /* spin the cross */
-  input:checked ~ .burger-menu > .burger-menu-icon {
+  .burger-menu input:checked + .burger-menu-active + label .burger-menu-icon span {
     transform: rotate(225deg); }
   .header .burger-menu .burger-menu-active {
     position: absolute;
