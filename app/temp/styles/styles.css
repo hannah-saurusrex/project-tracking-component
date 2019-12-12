@@ -180,7 +180,7 @@ footer {
     grid-template-areas: "logo header" "pitch-visual pitch-visual" "pitch-intro pitch-intro" "footer footer"; }
   .logo {
     grid-area: logo;
-    margin: 35px 0 0 20px; }
+    margin: 28px 0 0 25px; }
   .header {
     grid-area: header; }
   .header ul {
@@ -211,8 +211,21 @@ footer {
     width: 100%;
     height: .19rem;
     margin-bottom: .4rem;
+    border-radius: 20%;
     background: var(--darkBlue);
     transition: .3s ease; }
+  .header .burger-menu label .burger-menu-icon span:before, .header .burger-menu label .burger-menu-icon span:after {
+    content: '';
+    top: -12px;
+    width: 100%;
+    height: .19rem;
+    border-radius: 20%;
+    background: inherit;
+    /*inherit value from parent*/
+    position: absolute;
+    transition: all 0.4s ease; }
+  .header .burger-menu label .burger-menu-icon span:before {
+    top: 12px; }
   .header .burger-menu .burger-menu-active {
     position: absolute;
     height: 0;
