@@ -420,3 +420,46 @@ footer {
 
 }
 
+@media only screen and (min-width: 668px) and (max-width: 945px) {
+    .logo {
+        margin: 40px 0 50px 4rem;
+    }
+
+    .nav-menu li {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .pitch {        
+        margin-left: 4rem;
+        padding-top: 20px;
+    }
+
+    .pitch h1 {
+        font-size: 48px;
+        max-width: 95%;
+        line-height: 3rem;
+    }
+
+    .pitch p {
+        margin-top: 1.5rem;
+        max-width: 90%;
+    }
+
+    .demo {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .demo button {
+        margin-right: 0;
+        display: inline-block;
+    }
+
+    .demo h2 {
+        font-size: 13px;
+        letter-spacing: 3.25px;
+        display: inline-block;
+    }
+}
+
