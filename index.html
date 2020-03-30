@@ -3,72 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Project tracking intro component</title>
 
 </head>
 <body>
-  <div class="main">
-    <div class="logo">
-        <a href="#"><img src="images/logo.svg" alt="company logo" /></a> 
-    </div> 
-    <div class="header">
-      <!--begin mobile nav-->
-      <div class="burger-menu">
-        <input id="burger-menu" aria-label="mobile navigation" type="checkbox">
-        <nav class="burger-menu-active">
-          <a href="#" class="button">Products</a>
-          <a href="#" class="button">Features</a>
-          <a href="#" class="button">Pricing</a>
-          <a href="#" class="button">Login</a>  
-        </nav>
-        <label for="burger-menu">
-          <div class="burger-menu-icon">
-            <span></span>
-          </div>
-        </label>
-      </div>
-      <!-- Mobile Nav End -->
-    
-        <div class="nav-menu">
-          <ul>
-            <li href="#">Product</li>
-            <li href="#">Features</li>
-            <li href="#">Pricing</li>
-            <li class="spacer">.</li>
-            <span><li href="#">Login</li></span>
-          </ul>
-        </div>
-    </div>
-      
-      <div class="pitch">
-        <h3><span>New</span> Monograph Dashboard</h3>
-    
-        <h1>Powerful insights into your team</h1>
-        <p>Project planning and time tracking for agile teams</p>
-    
-        <div class="demo">
-          <button>Schedule a demo</button> 
-          <h2>to see a preview</h2>
-        </div>
-      </div>
-    
-      <div class="pitch-image">
-        <img src="./images/illustration-devices.svg" alt="illustration of desktop and mobile devices" />
-      </div>
+  <nav>
+    <div class="container">
+      <img src="./images/logo.svg" alt="logo" />
 
-      <div class="image-bg"></div>
-      
-      <footer>
-        <p class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="https://www.frontendmentor.io/profile/hannah-saurusrex">Hannah McMahon</a>.
+      <button href="#" class="hamburger" id="hamburger">
+        <img class="icon-hamburger" src="./images/icon-hamburger.svg" alt="hamburger icon" />
+        <img class="icon-close" src="./images/icon-close.svg" alt="close icon" />
+      </button>
+
+      <ul>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li class="unicorn"><a href="#">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container mobile-reverse">
+      <div>
+        <h3><span>New</span> Monograph Dashboard</h3>
+        <h1>
+          Powerful insights into your team
+        </h1>
+        <p>
+          Project planning and time tracking for agile teams
         </p>
-      </footer>
-  </div>
+
+        <div class="flex">
+          <button class="btn">
+            Schedule a demo
+          </button>
+          <h3>to see a live preview</h3>
+        </div>
+
+      </div>
+      <div>
+        <img src="./images/illustration-devices.svg" alt="devices illustration" class="illustration" />
+      </div>
+    </div>
+  </main>
+      
+  
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/hannah-saurusrex">Hannah McMahon</a>.
+    </p>
+  </footer>
+
   
 </body>
 </html>
