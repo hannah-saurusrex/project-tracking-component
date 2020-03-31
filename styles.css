@@ -79,6 +79,10 @@ p {
     cursor: pointer;
 }
 
+.btn:hover {
+    opacity: 0.6;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -147,6 +151,10 @@ ul li a {
 
 ul li.unicorn a {
     color: var(--grayishBlue);
+}
+
+ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
